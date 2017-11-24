@@ -931,7 +931,7 @@ public class ActionHandler {
     private static void sendCommandToWindowManager(Intent intent) {
         IWindowManager wm = WindowManagerGlobal.getWindowManagerService();
         try {
-            wm.sendCustomAction(intent);
+            wm.sendGzospAction(intent);
         } catch (RemoteException e) {
             e.printStackTrace();
         }
